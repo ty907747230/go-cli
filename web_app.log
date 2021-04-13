@@ -1,0 +1,18 @@
+{"level":"DEBUG","time":"2021-04-13T16:30:57.050+0800","caller":"web_opp/main.go:37","msg":"logger init success..."}
+{"level":"DEBUG","time":"2021-04-13T16:32:50.540+0800","caller":"web_opp/main.go:37","msg":"logger init success..."}
+{"level":"DEBUG","time":"2021-04-13T16:36:17.969+0800","caller":"web_opp/main.go:37","msg":"logger init success..."}
+{"level":"DEBUG","time":"2021-04-13T16:37:24.390+0800","caller":"web_opp/main.go:37","msg":"logger init success..."}
+{"level":"DEBUG","time":"2021-04-13T16:41:33.548+0800","caller":"web_opp/main.go:37","msg":"logger init success..."}
+{"level":"DEBUG","time":"2021-04-13T16:43:49.422+0800","caller":"web_opp/main.go:37","msg":"logger init success..."}
+{"level":"DEBUG","time":"2021-04-13T16:44:22.549+0800","caller":"web_opp/main.go:37","msg":"logger init success..."}
+{"level":"DEBUG","time":"2021-04-13T16:44:35.873+0800","caller":"web_opp/main.go:37","msg":"logger init success..."}
+{"level":"DEBUG","time":"2021-04-13T16:44:54.571+0800","caller":"web_opp/main.go:37","msg":"logger init success..."}
+{"level":"DEBUG","time":"2021-04-13T16:45:31.065+0800","caller":"web_opp/main.go:37","msg":"logger init success..."}
+{"level":"DEBUG","time":"2021-04-13T16:49:29.717+0800","caller":"web_opp/main.go:37","msg":"logger init success..."}
+{"level":"DEBUG","time":"2021-04-13T16:50:32.309+0800","caller":"web_opp/main.go:37","msg":"logger init success..."}
+{"level":"DEBUG","time":"2021-04-13T16:50:41.332+0800","caller":"web_opp/main.go:37","msg":"logger init success..."}
+{"level":"DEBUG","time":"2021-04-13T16:51:25.656+0800","caller":"web_opp/main.go:37","msg":"logger init success..."}
+{"level":"DEBUG","time":"2021-04-13T16:52:30.721+0800","caller":"web_opp/main.go:37","msg":"logger init success..."}
+{"level":"DEBUG","time":"2021-04-13T16:53:05.059+0800","caller":"web_opp/main.go:37","msg":"logger init success..."}
+{"level":"INFO","time":"2021-04-13T16:53:17.614+0800","caller":"logger/logger.go:71","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"::1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36","errors":"","cost":0.0010984}
+{"level":"INFO","time":"2021-04-13T16:53:17.714+0800","caller":"logger/logger.go:71","msg":"/favicon.ico","status":404,"method":"GET","path":"/favicon.ico","query":"","ip":"::1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36","errors":"","cost":0}
