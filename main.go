@@ -15,8 +15,6 @@ import (
 	"web_opp/routes"
 	"web_opp/settings"
 
-	"github.com/spf13/viper"
-
 	"go.uber.org/zap"
 )
 
@@ -28,8 +26,9 @@ func main() {
 		fmt.Printf("init settings failed,err:%v\n", err)
 		return
 	}
+	fmt.Printf("log:%v\n", settings.Conf.LogConfig)
 	//2.初始化日志 zepto
-	if err := logger.Init(); err != nil {
+	if err := logger.Init(settings.Conf.LogConfig); err != nil {
 		fmt.Printf("init log failed,err:%v\n", err)
 		return
 	}
@@ -37,14 +36,14 @@ func main() {
 	zap.L().Debug("logger init success...")
 
 	//3.初始化MYSQL链接
-	if err := mysql.Init(); err != nil {
+	if err := mysql.Init(settings.Conf.MysqlConfig); err != nil {
 		fmt.Printf("init mysql failed,err:%v\n", err)
 		return
 	}
 	defer mysql.Close()
 
 	//4.初始化Redis连接
-	if err := redis.Init(); err != nil {
+	if err := redis.Init(settings.Conf.RedisConfig); err != nil {
 		fmt.Printf("init redis failed,err:%v\n", err)
 		return
 	}
@@ -55,7 +54,8 @@ func main() {
 
 	//6.启动服务（优雅关机）
 	srv := &http.Server{
-		Addr:    fmt.Sprintf(":%d", viper.GetInt("app.port")),
+		//Addr:    fmt.Sprintf(":%d", viper.GetInt("app.port")),
+		Addr:    fmt.Sprintf(":%d", settings.Conf.Port),
 		Handler: r,
 	}
 

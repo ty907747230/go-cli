@@ -1,7 +1,7 @@
-app:
-  name: "go_cli"
-  mode: "dev"
-  port: 8081
+name: "go_cli"
+mode: "dev"
+port: 8081
+version: "1.0.1"
 
 log:
   level: "debug"
@@ -23,5 +23,5 @@ redis:
   host: "127.0.0.1"
   port: 6379
   db: 0
-  passwoed: ""
+  password: ""
   pool_size: 100
